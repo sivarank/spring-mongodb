@@ -1,0 +1,17 @@
+#spring.data.mongodb.host=localhost
+#spring.data.mongodb.port=27017
+#spring.data.mongodb.database=BookStore
+#newRelic
+
+#logging setting
+#logging:#  level:
+#    root: info
+#actuator and Prometheus settings
+management:
+  endpoints:
+    web:      exposure:        include: "*"                  endpoint:
+    prometheus:      enabled: true      health:      show-details: always  metrics:    export:      prometheus:        enabled: true
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://dbUser:Learning%401@cluster0.qtfhq.mongodb.net/springBoot
